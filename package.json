@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/BigNATE38/Nathaniel-NoSQL-Social-Network-API/issues"
   },
-  "homepage": "https://github.com/BigNATE38/Nathaniel-NoSQL-Social-Network-API#readme"
-}
+  "homepage": "https://github.com/BigNATE38/Nathaniel-NoSQL-Social-Network-API#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^7.0.2"
+  }
+} 
