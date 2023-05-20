@@ -70,7 +70,7 @@ module.exports = (
 
     let hour;
 
-    if (dateObj.getHouts > 12) {
+    if (dateObj.getHours > 12) {
         hour = Math.floor(dateObj.getHours() / 2);
     } else {
         hour = dateObj.getHours();
@@ -84,7 +84,7 @@ module.exports = (
 
     let periodOfDay;
 
-    if (dateObj.getHouts() >= 12) {
+    if (dateObj.getHours() >= 12) {
         periodOfDay = 'pm';
     } else {
         periodOfDay = 'am';

@@ -20,6 +20,6 @@
   "homepage": "https://github.com/BigNATE38/Nathaniel-NoSQL-Social-Network-API#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^7.0.2"
+    "mongoose": "^5.12.13"
   }
 } 

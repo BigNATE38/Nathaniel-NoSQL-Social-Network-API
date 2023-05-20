@@ -37,7 +37,7 @@ const userControl = {
     createUser({ body }, res) {
         User.create(body)
         .then((dbUserData) => res.json(dbUserData))
-        .cath((err) => res.status(400).json(err));
+        .catch((err) => res.status(400).json(err));
     },
 
     // PUT 
@@ -60,7 +60,7 @@ const userControl = {
 
     // DELETE 
     deleteUser({ params }, res) {
-        User.findOneAndUpdate({ _id: params.userId })
+        User.findOneAndDelete({ _id: params.userId })
             .then((dbUserData) => {
                 if (!dbUserData) {
                     res.status(404).json({ message: "No user with this id!"});
@@ -90,6 +90,7 @@ const userControl = {
     },
     // DELETE - remove reaction according to reactionId
     removeFriend({ params }, res) {
+        console.log("remove friend", params.friendId)
         User.findOneAndUpdate(
             { _id: params.userId },
             { $pull: { friends: params.friendId } } ,

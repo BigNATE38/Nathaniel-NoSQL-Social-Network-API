@@ -33,7 +33,7 @@ const thoughtControl = {
     // POST - Create new thoughts 
     addThoughts({ params, body }, res) {
         Thought.create(body)
-            .then(({ _id }) =>{
+            .then(({ _id }) => {
                 console.log(_id);
                 return User.findOneAndUpdate(
                     { _id: body.userId },
@@ -71,7 +71,7 @@ const thoughtControl = {
 
     // DELETE - removes thoughts according to _id
     removeThoughts({ params }, res) {
-        Thought.findOneAndUpdate({ _id: params.thoughtId })
+        Thought.findOneAndDelete({ _id: params.thoughtId })
         .then((deletedThought) => {
             if (!deletedThought) {
                 return res.status(404).json({ message: "No thought with this id!"});
