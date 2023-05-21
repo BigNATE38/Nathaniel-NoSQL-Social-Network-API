@@ -19,5 +19,6 @@ Credit goes to UCI for providing the guidelines for this assignment.
 N/A
 ## Deployment/Video 
 (https://drive.google.com/file/d/15wZnrvMLNvweMLo_6XPUOJstBYLlAZ7p/view?usp=sharing)
-![SiteImage](images/techbloghome.png)
-![SiteImage](images/techblogdashboard.png)
+![SiteImage](images/Social-Network1.png)
+![SiteImage](images/Social-Network2.png)
+![SiteImage](images/Social-Network3.png)
